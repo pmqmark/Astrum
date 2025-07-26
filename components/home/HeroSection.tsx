@@ -10,12 +10,12 @@ const HeroSection = () => {
   return (
     <section className="pt-24 md:pt-32 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-8 overflow-hidden"
           >
             <div className="flex items-center space-x-2 text-orange-500 -mb-5 md:-mb-0">
               {[...Array(5)].map((_, i) => (
@@ -84,26 +84,27 @@ const HeroSection = () => {
               <p className="font-lato text-sm text-gray-500 mb-1 md:mb-2">
                 Join students from
               </p>
-              <div className="flex items-center md:space-x-4 text-sm font-segoe-ui text-gray-600 ">
-                <p className="flex gap-1">
+              <div className="flex items-center space-x-4 text-sm font-segoe-ui text-gray-600 w-full overflow-x-scroll hideScrollBar">
+                <div className="flex gap-1">
                   🇺🇸 <span className="font-semibold">USA</span>{" "}
-                </p>
-                <p className="flex gap-1">
+                </div>
+                <div className="flex gap-1">
                   🇬🇧 <span className="font-semibold">UK</span>{" "}
-                </p>
-                <p className="flex gap-1">
+                </div>
+                <div className="flex gap-1">
                   🇨🇦 <span className="font-semibold">Canada</span>{" "}
-                </p>
-                <p className="flex gap-1">
+                </div>
+                <div className="flex gap-1">
                   🇦🇺 <span className="font-semibold">Australia</span>{" "}
-                </p>
-                <p className="flex gap-1">
+                </div>
+                <div className="flex gap-1">
                   🇩🇪 <span className="font-semibold">Germany</span>{" "}
-                </p>
+                </div>
+
                 <br />
-                <p className="flex gap-1">
+                <div className="flex gap-1">
                   🇮🇳 <span className="font-semibold">India</span>{" "}
-                </p>
+                </div>
               </div>
             </div>
           </motion.div>

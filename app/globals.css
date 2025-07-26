@@ -136,3 +136,7 @@ html {
     line-height: 3.5rem;
   }
 }
+
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
