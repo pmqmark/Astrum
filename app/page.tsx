@@ -21,6 +21,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
+import Calculator from "@/components/home/Calculator";
 
 const stats = [
   {
@@ -291,6 +292,9 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <HeroSection />
+
+      {/* Loan Calculator */}
+      <Calculator />
 
       {/* Why Students Choose Astrum */}
       <section className="py-16 bg-white">
