@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const Nav = () => {
   return (
@@ -9,12 +10,16 @@ const Nav = () => {
       <div className="max-w-8xl mx-auto px-4 md:px-0">
         <div className="flex justify-between items-center h-16">
           <Link href={"/"} className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-[#164069] to-[#13C8EC] rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
-            <span className="font-poppins font-semibold text-xl text-gray-900">
+            <Image
+              src={"/logo.png"}
+              alt="logo"
+              width={500}
+              height={500}
+              className="object-contain w-14"
+            />
+            {/* <span className="font-poppins font-semibold text-xl text-gray-900">
               Astrum Fintech
-            </span>
+            </span> */}
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
