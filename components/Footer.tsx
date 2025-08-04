@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,12 +9,18 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-[#0096c7] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
-              <span className="font-poppins font-semibold text-xl text-gray-900">
-                Astrum Fintech
-              </span>
+              <Link href={"/"} className="flex items-center space-x-2">
+                <Image
+                  src={"/logo.png"}
+                  alt="logo"
+                  width={500}
+                  height={500}
+                  className="object-contain w-14"
+                />
+                {/* <span className="font-poppins font-semibold text-xl text-gray-900">
+              Astrum Fintech
+            </span> */}
+              </Link>
             </div>
             <p className="font-lato text-gray-600 text-sm mb-4">
               Finance Your Future, Not Just Your Fees. Making education loans
@@ -90,10 +97,10 @@ const Footer = () => {
               Get in Touch
             </h4>
             <div className="space-y-2 font-segoe-ui text-sm text-gray-600">
-              <div>📞 +91 98765 43210</div>
+              <div>📞 +919846323331</div>
               <div>✉️ hello@astrumfintech.com</div>
               <div>💬 WhatsApp Support</div>
-              <div>📍 Mumbai, India</div>
+              <div>📍 Cochin, India</div>
             </div>
           </div>
         </div>
