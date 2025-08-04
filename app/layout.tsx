@@ -6,6 +6,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "Astrum Fintech - Finance Your Future, Not Just Your Fees",
   description:
     "Transform your education dreams into reality with our student-friendly loan solutions. Quick approvals, competitive rates, and zero hidden charges.",
